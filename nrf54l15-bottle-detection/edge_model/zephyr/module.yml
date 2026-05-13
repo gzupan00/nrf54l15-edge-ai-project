@@ -1,0 +1,5 @@
+name: goran3 v9
+build:
+  cmake: .
+  depends:
+    - edge-impulse-sdk-zephyr
