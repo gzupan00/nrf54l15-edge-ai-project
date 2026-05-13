@@ -24,6 +24,14 @@ Real-time embedded object detection project developed using the Nordic Semicondu
 - Visual Studio Code
 - C/C++
 
+## Running Inference
+
+After flashing the firmware to the nRF54L15 DK, the TFT display continuously shows the live camera feed from the OV7670 module.
+
+Object detection inference is executed by pressing Button 1 on the development board. After the button is pressed, the captured image is processed by the Edge Impulse FOMO model and the detection results are displayed on the TFT screen together with bounding boxes.
+
+Detection confidence values and bounding box coordinates are also printed through the serial terminal at 115200 baud.
+
 ## Dataset
 
 The dataset contains 616 manually collected images captured using the OV7670 camera module. The dataset includes both images containing plastic bottles and images without bottles, including background scenes and other objects.
